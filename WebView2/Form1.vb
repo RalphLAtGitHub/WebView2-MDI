@@ -19,4 +19,11 @@
 
     End Sub
 
+    'Protected Overrides Sub OnFormClosing(e As FormClosingEventArgs)
+
+    '    MyBase.OnFormClosing(e)
+    '    m_WebViewForm.Show()     'is a workaround
+
+    'End Sub
+
 End Class

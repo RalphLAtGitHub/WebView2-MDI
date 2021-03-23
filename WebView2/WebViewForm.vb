@@ -58,4 +58,11 @@ Public Class WebViewForm
 
     End Sub
 
+    'Protected Overrides Sub OnFormClosing(e As FormClosingEventArgs)
+
+    '    MyBase.OnFormClosing(e)
+    '    Me.Show()                   'is NOT a workaraound
+
+    'End Sub
+
 End Class
