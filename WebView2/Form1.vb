@@ -9,7 +9,8 @@
         Me.IsMdiContainer = True
         Me.StartPosition = FormStartPosition.CenterScreen
 
-        m_WebViewForm = New WebViewForm With {.MdiParent = Me}  'Should generating a form in reserve be a coherent solution?       
+        m_WebViewForm = New WebViewForm With {.MdiParent = Me, .Name = "DEMO"}  'Should generating a form in reserve be a coherent solution?  
+        Debug.WriteLine("First MDI-child " + Me.MdiChildren.First.Name + " is of type " + Me.MdiChildren.First.GetType.ToString)
 
     End Sub
 
