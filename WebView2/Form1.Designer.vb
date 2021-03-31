@@ -49,7 +49,6 @@ Partial Class Form1
     "ss Button1 to show WebViewForm -> close MDI via close button -> no exception is " &
         "thrown." & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) "c. Press Button1 to show WebViewForm -> minimize and hide WebViewForm" & 
         "WebViewForm via minimze button -> WebViewForm is shown in taskbar."
-
         '
         'Form1
         '
