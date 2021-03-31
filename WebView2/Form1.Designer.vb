@@ -28,7 +28,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 412)
+        Me.Button1.Location = New System.Drawing.Point(12, 447)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(66, 27)
         Me.Button1.TabIndex = 0
@@ -40,20 +40,22 @@ Partial Class Form1
         Me.RichTextBox1.BackColor = System.Drawing.Color.LightGray
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.RichTextBox1.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.RichTextBox1.Location = New System.Drawing.Point(244, 357)
+        Me.RichTextBox1.Location = New System.Drawing.Point(127,358)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
-        Me.RichTextBox1.Size = New System.Drawing.Size(302, 82)
+        Me.RichTextBox1.Size = New System.Drawing.Size(419,116)
         Me.RichTextBox1.TabIndex = 3
         Me.RichTextBox1.Text = "a. Close MDI via close button -> exception is thrown - see output window." & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & "b. Pre" &
     "ss Button1 to show WebViewForm -> close MDI via close button -> no exception is " &
-    "thrown."
+        "thrown." & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) "c. Press Button1 to show WebViewForm -> minimize and hide WebViewForm" & 
+        "WebViewForm via minimze button -> WebViewForm is shown in taskbar."
+
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(558, 451)
+        Me.ClientSize = New System.Drawing.Size(558, 486)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
