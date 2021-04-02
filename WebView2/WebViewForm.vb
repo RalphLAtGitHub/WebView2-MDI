@@ -61,7 +61,10 @@ Public Class WebViewForm
     Protected Overrides Sub OnResize(e As EventArgs)
 
         MyBase.OnResize(e)
-        If Me.WindowState = FormWindowState.Minimized Then Me.Visible = False  '-> Additional bug: child form is minimized to Windows task bar.
+        If Me.WindowState = FormWindowState.Minimized Then Me.Visible = False
+            '-> Additional bug: child form is minimized to Windows task bar.
+            'Workaround: Me.MidiParent = Nothing
+
 
     End Sub
 
